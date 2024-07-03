@@ -1,5 +1,5 @@
-describe('My First Test', () => {
-  it('Visits the Cypress website', () => {
+describe('TAXER', () => {
+  it('Upload certificates to the website', () => {
 
     cy.visit('https://js-55fbfg.stackblitz.io/')
 
@@ -16,7 +16,7 @@ describe('My First Test', () => {
       cy.wrap($td).invoke('text').should('not.be.empty');
     });
 
-    cy.wrap('div[class="list-group mb-3"]').children().should('exist');
+    cy.get('div[class="list-group mb-3"]').children().should('exist');
 
   })
 })
